@@ -74,17 +74,20 @@
                     </figure>
                     <div class="card-body text-center ">
                         <h2 class=" font-bold text-center text-2xl ">Parallelogram</h2>
-                        <p class="text-center">Area (A) = b h</p>
+                        <p class="text-center">Area (A) = b X h</p>
                         <!-- input -->
                         <div class="flex items-center">
-                            <input class="w-16 m-2" type="text" placeholder="b">
+                            <input id="parallelogram-input-width" class="w-16 m-2" type="text" placeholder="b">
                             <span class="mr-2">cm</span>
 
-                            <input class="w-16 m-2" type="text" placeholder="h">
+                            <input id="parallelogram-input-length" class="w-16 m-2" type="text" placeholder="h">
                             <span>cm</span>
                         </div>
+                        <div>
+                            <p>area: <span id="parallelogram-area-display"></span> <span>cm<sup>2</sub></span> </p>
+                        </div>
                         <div class="">
-                            <button class="btn btn-primary w-full">Calculate
+                            <button class="btn btn-primary w-full" onclick="calculateParallelogramAreaBtn()">Calculate
                             </button>
                         </div>
                     </div>
@@ -96,17 +99,20 @@
                     </figure>
                     <div class="card-body text-center ">
                         <h2 class=" font-bold text-center text-2xl ">Rhombus</h2>
-                        <p class="text-center">Area (A) = 0.5 b h</p>
+                        <p class="text-center">Area (A) = 0.5 <span> d<sub>1</sub> X d<sub>2</sub></span></p>
                         <!-- input -->
                         <div class="flex items-center">
-                            <input class="w-16 m-2" type="text" placeholder="b">
+                            <input id="rhombus-input-width" class="w-16 m-2" type="text" placeholder="b">
                             <span class="mr-2">cm</span>
 
-                            <input class="w-16 m-2" type="text" placeholder="h">
+                            <input id="rhombus-input-hight" class="w-16 m-2" type="text" placeholder="h">
                             <span>cm</span>
                         </div>
+                        <div>
+                            <p>area: <span id="rhombus-area-display"></span> <span>cm<sup>2</sub></span> </p>
+                        </div>
                         <div class="">
-                            <button class="btn btn-primary w-full">Calculate
+                            <button class="btn btn-primary w-full" onclick="calculateRhombusAreaBtn()">Calculate
                             </button>
                         </div>
                     </div>
@@ -118,17 +124,20 @@
                     </figure>
                     <div class="card-body text-center ">
                         <h2 class=" font-bold text-center text-2xl ">Pentagon</h2>
-                        <p class="text-center">Area (A) = 0.5 b h</p>
+                        <p class="text-center">Area (A) = 0.5 p X b</p>
                         <!-- input -->
                         <div class="flex items-center">
-                            <input class="w-16 m-2" type="text" placeholder="b">
+                            <input id="pentagon-input-width" class="w-16 m-2" type="text" placeholder="b">
                             <span class="mr-2">cm</span>
 
-                            <input class="w-16 m-2" type="text" placeholder="h">
+                            <input id="pentagon-input-hight" class="w-16 m-2" type="text" placeholder="h">
                             <span>cm</span>
                         </div>
+                        <div>
+                            <p>area: <span id="pentagon-area-display"></span> <span>cm<sup>2</sub></span> </p>
+                        </div>
                         <div class="">
-                            <button class="btn btn-primary w-full">Calculate
+                            <button class="btn btn-primary w-full" onclick="calculatePentagonAreaBtn()">Calculate
                             </button>
                         </div>
                     </div>
@@ -140,17 +149,20 @@
                     </figure>
                     <div class="card-body text-center ">
                         <h2 class=" font-bold text-center text-2xl ">Ellipse</h2>
-                        <p class="text-center">Area (A) = 0.5 b h</p>
+                        <p class="text-center">Area (A) = πab</p>
                         <!-- input -->
                         <div class="flex items-center">
-                            <input class="w-16 m-2" type="text" placeholder="b">
+                            <input id="ellipse-input-width" class="w-16 m-2" type="text" placeholder="b">
                             <span class="mr-2">cm</span>
 
-                            <input class="w-16 m-2" type="text" placeholder="h">
+                            <input id="ellipse-input-hight" class="w-16 m-2" type="text" placeholder="h">
                             <span>cm</span>
                         </div>
+                        <div>
+                            <p>area: <span id="ellipse-area-display"></span> <span>cm<sup>2</sub></span> </p>
+                        </div>
                         <div class="">
-                            <button class="btn btn-primary w-full">Calculate
+                            <button class="btn btn-primary w-full" onclick="calculateEllipseAreaBtn()">Calculate
                             </button>
                         </div>
                     </div>
@@ -171,6 +183,10 @@
     <!-- js -->
     <script src="js-script/triangle.js"></script>
     <script src="js-script/rectangle.js"></script>
+    <script src="js-script/parallelogram.js"></script>
+    <script src="js-script/rhombus.js"></script>
+    <script src="js-script/pentagon.js"></script>
+    <script src="js-script/ellipse.js"></script>
 </body>
 
 </html>
